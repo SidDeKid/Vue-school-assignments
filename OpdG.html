@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Opdracht G</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/opdG.css">
+</head>
+
+<body>
+    <nav>
+        <a href="OpdA.html">Opd A</a>
+        <a href="OpdB.html">Opd B</a>
+        <a href="OpdC.html">Opd C</a>
+        <a href="OpdD.html">Opd D</a>
+        <a href="OpdE.html">Opd E</a>
+        <a href="OpdF.html">Opd F</a>
+        <a id="active" href="OpdG.html">Opd G</a>
+    </nav>
+    <main>
+        <div id="app">
+            <img v-bind:src="smileySrc" alt="Smiley"> <br>
+            <button v-on:click="ChangeSmiley()">smile</button>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; SDBR 2023
+        </p>
+    </footer>
+</body>
+
+<script src="https://unpkg.com/vue"></script>                       <!--js na de body-->
+<script src="js/opdG.js"></script>
+
+</html>

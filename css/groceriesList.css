@@ -1,0 +1,40 @@
+.crossed {
+    text-decoration: line-through;
+}
+.crossed:hover {
+    color: cyan;
+    text-decoration: none;
+    cursor: pointer;
+}
+.uncrossed:hover {
+    color: red;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+.form {
+    display: flex;
+    grid-area: 2 / 2 / 3 / 3;
+    height: 25px;
+}
+
+#app {
+    display: grid;
+    grid-template: auto auto / 300px auto;
+    column-gap: 20px;
+}
+#Boodschappenlijstje {
+    display: flex;
+    grid-area: 2 / 1 / 3 / 2;
+    flex-direction: column;
+}
+#Boodschappenlijstje div {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px white solid;
+}
+#Boodschappenlijstje div input {
+    margin: 5px 10px;
+}
+#Boodschappenlijstje .flexHead {
+    background: gray;
+}

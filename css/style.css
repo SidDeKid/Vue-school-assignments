@@ -1,0 +1,46 @@
+* {
+    color: white;
+}
+body {
+    display: grid;
+    grid-template-rows: 38.4px auto 50px;
+    background: black;
+    margin: 0px;
+    height: 100vh;
+}
+
+nav, footer {
+    display: flex;
+    background: gray;
+}
+nav a {
+    display: block;
+    padding: 10px 20px;
+    background: none;
+    text-decoration: none;
+}
+nav #active {
+    background: darkgray;
+    color: black;
+}
+nav a:hover {
+    cursor: pointer;
+    background: lightgray;
+    color: black;
+    text-decoration: underline;
+}
+
+main {
+    margin: 10px;
+}
+label, input {
+    display: block;
+}
+input, button {
+    color: black;
+}
+
+footer p {
+    align-self: center;
+    padding-left: 10px;
+}

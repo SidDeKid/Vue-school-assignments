@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Opdracht A</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <a id="active" href="OpdA.html">Opd A</a>
+        <a href="OpdB.html">Opd B</a>
+        <a href="OpdC.html">Opd C</a>
+        <a href="OpdD.html">Opd D</a>
+        <a href="OpdE.html">Opd E</a>
+        <a href="OpdF.html">Opd F</a>
+        <a href="OpdG.html">Opd G</a>
+    </nav>
+    <main>
+        <div id="app">
+            <h1 v-show="toon">{{tekst}}</h1>                    <!--enkelzijdige binding-->
+            <input v-model="tekst"/> <br>                       <!--tweezijdige binding-->
+            <button v-on:click="schakel">schakel</button>       <!--binding event handler-->
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; SDBR 2023
+        </p>
+    </footer>
+</body>
+
+<script src="https://unpkg.com/vue"></script>               <!--js na de body-->
+<script src="js/opdA.js"></script>
+
+</html>
