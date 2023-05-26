@@ -13,7 +13,7 @@ const app = Vue.createApp({                                     // vue-instantie
             }
         },
         toMl(){
-            if (!isNaN(this.kilometer && this.kilometer != "")) {
+            if (!isNaN(this.kilometer) && this.kilometer != "") {
                 this.mile = (this.kilometer / 1.61).toFixed(2)
                 console.log(this.kilometer + " kilometers converted.")
             }
